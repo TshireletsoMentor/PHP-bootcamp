@@ -1,7 +1,41 @@
-body{
-    background-color: rgb(70, 70, 70);
+* {
+    width:100%;
+    margin:auto;
 }
-.round_shado1{
-    border-radius:20px;
+.grey_round_shadow{
+    border-radius:10px;
     box-shadow: 10px 10px 10px black;
+    background-color: rgb(144, 144, 144);
+}
+.top_box{
+    width:75%;
+    height:auto;
+    margin:auto;
+    margin-top:1%;
+    padding:1%;
+    position:relative;
+    z-index: 1;
+}
+#pic_day42{
+    display:inline-block;
+    width:35%;
+}
+#top_box_right{
+    width:100%;
+    height:auto;
+    float: right;
+    width:3%;
+
+}
+#reload{
+    width:80%;
+    display:block;
+    margin-left:35%;
+    margin-bottom:150%;
+}
+#close{
+    width:80%;
+    display:block;
+    margin-top:3%;
+    margin-left:35%;
 }
