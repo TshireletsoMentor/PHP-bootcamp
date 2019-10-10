@@ -1,3 +1,5 @@
+#!/usr/bin/php
+<?PHP
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
@@ -10,4 +12,22 @@
 #                                                                              #
 # **************************************************************************** #
 
-
+$input = fopen("php://stdin", "r");
+while($input && !feof($input)){
+    echo "Enter a number: ";
+    $value = fgets($input);
+    $value = trim($value, "\n");
+    if(is_numeric($value)){
+        if ($value % 2 == 0){
+            echo "The number $value is even\n";
+        }
+        else{
+            echo "The number $value is odd\n";
+        }
+    }
+    else{
+        echo "'$value' is not a number\n";
+    }
+}
+fclose($input);
+?>
