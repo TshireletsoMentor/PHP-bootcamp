@@ -1,24 +1,21 @@
-n#!/usr/bin/php
 <?PHP
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    ssap.php                                           :+:      :+:    :+:    #
+#    ft_is_sort.php                                     :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: tmentor <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/10/11 09:16:53 by tmentor           #+#    #+#              #
-#    Updated: 2019/10/11 09:17:09 by tmentor          ###   ########.fr        #
+#    Created: 2019/10/11 09:22:52 by tmentor           #+#    #+#              #
+#    Updated: 2019/10/11 09:22:54 by tmentor          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-$arr = [];
-unset($argv[0]);
-foreach($argv as $var){
-    $tmp = array_filter(explode(" ", $var));
-    foreach($tmp as $word)
-        $arr[] = $word;
+FUNCTION ft_is_sort($arr1){
+    $arr2 = $arr1;
+    sort($arr2);
+    if (array_diff_assoc($arr1, $arr2) == null)
+        return TRUE;
+    else
+        return FALSE;
 }
-sort($arr);
-foreach($arr as $a)
-    echo "$a\n";
 ?>
