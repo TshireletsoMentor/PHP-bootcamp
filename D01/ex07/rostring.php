@@ -17,9 +17,11 @@ function ft_split($str){
     return ($value);
 }
 $arr = ft_split($argv[1]);
-$first = $arr[0];
-unset($arr[0]);
-foreach($arr as $var)
+if($argc > 1){
+    $first = $arr[0];
+    unset($arr[0]);
+    foreach($arr as $var)
     echo "$var ";
-echo "$first\n";
+    echo "$first\n";
+}
 ?>
