@@ -1,10 +1,13 @@
 #!/usr/bin/php
 <?PHP
-$i = 1;
 $arr = [];
-while($i < $argc){
-    $arr = array_filter($argv[$i], explode(" ", $argv[$i]));
-    $i++;
+unset($argv[0]);
+foreach($argv as $var){
+    $tmp = array_filter(explode(" ", $var));
+    foreach($tmp as $word)
+        $arr[] = $word;
 }
-echo "$str";
+sort($arr);
+foreach($arr as $a)
+    echo "$a\n";
 ?>

@@ -1,12 +1,14 @@
 #!/usr/bin/php
 <?PHP
-if (argc > 1){
-    $s1 = argv[1];
-    $str = trim(preg_replace('/\s+/', ' ', $s1));
-    $a = $str[0];
-    unset($str[0]);
-    foreach($str as $var)
-        echo "$var";
-    echo " $a";
+function ft_split($str){
+    $input = preg_replace('/\s+/', ' ', $str);
+    $value = explode(" ", $input);
+    return ($value);
 }
+$arr = ft_split($argv[1]);
+$first = $arr[0];
+unset($arr[0]);
+foreach($arr as $var)
+    echo "$var ";
+echo "$first\n";
 ?>
