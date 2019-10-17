@@ -11,11 +11,11 @@
                 echo "OK\n";
             }
             else
-                echo "ERROR\n";
+                echo "ErROR\n";
         }
     }
     else
-        echo "ERROR\n";
+        echo "eRROR\n";
 
 
 ?>

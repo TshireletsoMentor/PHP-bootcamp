@@ -7,9 +7,9 @@
 ?>
 <html><body>
     <form action="index.php" method="GET">
-    Username: <input  type="text" name="login" value="<?PHP echo $_SESSION['login']; ?>" />
+    Username: <input  type="text" name="login" value="" />
     <br />
-    Password: <input  type="text" name="passwd" value="<?PHP echo $_SESSION['passwd']; ?>" />
+    Password: <input  type="text" name="passwd" value="" />
     <input type="submit" name="submit" value="OK"/> 
     </form>
 </body></html>
